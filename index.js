@@ -1,11 +1,24 @@
-function App() { //Pascal Case
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" alt="React Logo" />
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2024 Nishil development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
     return (
         <>
-            <header>
-                <nav>
-                    <img src="./react-logo.png" width="40px" alt="React Logo" />
-                </nav>
-            </header>
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -14,14 +27,23 @@ function App() { //Pascal Case
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-            <footer>
-                <small>© 2024 Nishil development. All rights reserved.</small>
-            </footer>
+        </>
+    )
+}
+
+function App() { //Pascal Case
+    return (
+        <>
+            <Header />
+            <MainContent />
+            <Footer />
         </>
     );
 }
 
 console.log(<App />); // or App()
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<App />);
 
