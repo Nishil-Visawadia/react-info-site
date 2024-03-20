@@ -1,7 +1,11 @@
-function App() {
+function App() { //Pascal Case
     return (
-        <div>
-            <img src="./react-logo.png" width="40px" alt="React Logo" />
+        <>
+            <header>
+                <nav>
+                    <img src="./react-logo.png" width="40px" alt="React Logo" />
+                </nav>
+            </header>
             <h1>Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
@@ -10,9 +14,14 @@ function App() {
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-        </div>
+            <footer>
+                <small>© 2024 Nishil development. All rights reserved.</small>
+            </footer>
+        </>
     );
 }
+
+console.log(<App />); // or App()
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 
