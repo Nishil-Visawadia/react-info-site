@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./react-logo.png" />
+    <link rel="icon" href="./images/react-logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Inter 400 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- Inter 600 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Inter 700 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./index.css">
     <title>React Fun Facts</title>
 </head>
+
 <body>
     <div id="root"></div>
 
     <!-- React -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <!-- React Production -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
     <!-- Babel -->
     <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@latest/babel.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@latest/babel.min.js"></script> -->
     <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
-    
+
+    <!-- Components Script -->
+    <script src="./components/Navbar.jsx" type="text/babel"></script>
+    <script src="./components/Main.jsx" type="text/babel"></script>
+    <script src="./App.jsx" type="text/babel"></script>
+
+    <!-- JS Scripts -->
     <script src="index.js" type="text/babel"></script>
     <script src="Header.js" type="text/babel"></script>
     <script src="Footer.js" type="text/babel"></script>
     <script src="MainContent.js" type="text/babel"></script>
+
+
 </body>
+
 </html>
